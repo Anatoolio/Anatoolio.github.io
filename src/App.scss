@@ -225,7 +225,7 @@ body {
             right: 0;
             height: calc(100dvh - 64px);
             width: min(80vw, 320px);
-            // background: $color-surface;
+            background: $color-bg-alt;
             padding: 20px;
             display: flex;
             flex-direction: column;
@@ -295,6 +295,9 @@ body {
     }
     &__text {
         margin: 0 0 20px;
+        font-size: 18px;
+        line-height: 1.5;
+        opacity: 0.85;
     }
     &__cta {
         display: inline-flex;
@@ -385,7 +388,7 @@ body {
         padding: 10px 20px;
         border-radius: 999px;
         border: 1px solid rgba(255, 255, 255, 0.16);
-        color: #0b0d17;
+        color: $color-text;
         text-decoration: none;
         font-weight: 600;
         transition: transform 0.15s ease;
@@ -468,6 +471,7 @@ body {
         &--wide {
             grid-column: auto;
             min-height: 220px;
+            height: auto;
         }
     }
 }
